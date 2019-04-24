@@ -15,7 +15,9 @@ public class Komputer {
     public Komputer(CPU cpu){
         this.cpu=cpu;
     }
-    
+    public Komputer(){
+        
+    }
     public void memasang(CPU cpu){
         this.cpu=cpu;
         System.out.println(cpu.getCPUData()+" di cabut");
