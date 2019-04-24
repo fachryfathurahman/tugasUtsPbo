@@ -18,7 +18,7 @@ public class Komputer {
     
     public void memasang(CPU cpu){
         this.cpu=cpu;
-        System.out.println(cpu.getCPUData()+"di cabut");
+        System.out.println(cpu.getCPUData()+" di cabut");
     }
     public void mencabut(){
         System.out.println(cpu.getCPUData()+" di cabut");
