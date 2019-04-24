@@ -10,5 +10,21 @@ package uts;
  * @author fachry
  */
 public class Komputer {
+    private CPU cpu;
     
+    public Komputer(CPU cpu){
+        this.cpu=cpu;
+    }
+    
+    public void memasang(CPU cpu){
+        this.cpu=cpu;
+        System.out.println(cpu.getCPUData()+"di cabut");
+    }
+    public void mencabut(){
+        System.out.println(cpu.getCPUData()+" di cabut");
+        this.cpu=null;
+    }
+    public void cetakInfo(){
+        System.out.println("spesifikasi: "+cpu.getCPUData());
+    }
 }
